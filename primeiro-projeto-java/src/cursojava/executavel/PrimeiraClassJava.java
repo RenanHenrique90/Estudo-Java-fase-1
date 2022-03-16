@@ -1,5 +1,7 @@
 package cursojava.executavel;
 
+import java.util.Iterator;
+
 import javax.print.attribute.standard.Media;
 
 public class PrimeiraClassJava {
@@ -76,7 +78,7 @@ public class PrimeiraClassJava {
 		}*/
 		//-----------------------------------------------------------------------
 		
-		/*Estrutura de repetição While*/
+		/*Estrutura de repetição While
 		
 		int numero1 = 0;
 		int numero2 = 0;
@@ -84,15 +86,28 @@ public class PrimeiraClassJava {
 		while (numero1 <= 20) {
 			System.out.println(numero1);
 			numero1 ++;
-		}
+		}*/
 		
-		/*Estrutura de repetição Do while*/
+		/*Estrutura de repetição Do while
 		System.out.println("___________________________\n");
 		
 		do {
 			System.out.println(numero2);
 			numero2 ++;
 		} while (numero2 >= 0 && numero2 <= 10);
-		    System.out.println("Hello World!");
+		    System.out.println("Hello World!");*/
+		//-----------------------------------------------------------------------
+		
+		/*Estrutura de repetição FOR*/
+		
+		for (int numero = 0; numero <= 10; numero ++) {
+			System.out.println(numero);
+		}
+		
+		System.out.println("_____________________\n");
+		
+		for (int numero2 = 10; numero2 >= 0; numero2 --) {
+			System.out.println(numero2);
+		}
 	}
 }
