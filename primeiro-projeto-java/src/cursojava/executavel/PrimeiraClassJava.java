@@ -149,6 +149,7 @@ public class PrimeiraClassJava {
 		
 		//-----------------------------------------------------------------------
 		
+		/*Trabalhando com entrada de dados no Java usando o import javax.swing.JOptionPane
 		String carros = JOptionPane.showInputDialog("Informe a quantidade de carros!");
 		String pessoas = JOptionPane.showInputDialog("Informe a quantidade de pessoas!");
 		
@@ -174,6 +175,28 @@ public class PrimeiraClassJava {
 		double resto1 = carroNumero1 % pessoaNumero1;
 		
 		JOptionPane.showMessageDialog(null, "o numero de carros para cada pessoa é: " + divisao1 + "\no numero de carros que sobrou é: " + resto1);
+		*/
 		
+		String carros = JOptionPane.showInputDialog("Informe a quantidade de carros!");
+		String pessoas = JOptionPane.showInputDialog("Informe a quantidade de pessoas!");
+		
+		double carroNumero = Double.parseDouble(carros);
+		double pessoaNumero = Double.parseDouble(pessoas);
+		
+		int divisao = (int) (carroNumero / pessoaNumero) ;
+		
+		double resto = carroNumero % pessoaNumero;
+		
+		int resposta = JOptionPane.showConfirmDialog(null, "Você quer ver resposta da divisao inteira?");
+		
+		if (resposta == 0) {
+			JOptionPane.showMessageDialog(null, "Essa é a resposta da divisao inteira: " + divisao);
+		}
+		
+		resposta = JOptionPane.showConfirmDialog(null, "Você quer ver a resposta do resto da divisão?");
+		
+		if (resposta == 0) {
+			JOptionPane.showMessageDialog(null, "Essa é a resposta do resto da divisão: " + resto);
+		}
 	}
 }
