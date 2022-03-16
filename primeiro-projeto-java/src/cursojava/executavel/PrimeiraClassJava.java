@@ -98,7 +98,7 @@ public class PrimeiraClassJava {
 		    System.out.println("Hello World!");*/
 		//-----------------------------------------------------------------------
 		
-		/*Estrutura de repetição FOR*/
+		/*Estrutura de repetição FOR
 		
 		for (int numero = 0; numero <= 10; numero ++) {
 			System.out.println(numero);
@@ -108,6 +108,21 @@ public class PrimeiraClassJava {
 		
 		for (int numero2 = 10; numero2 >= 0; numero2 --) {
 			System.out.println(numero2);
+		}*/
+		
+		//-----------------------------------------------------------------------
+		
+		/*For com Break*/
+		
+		for (int numero = 0; numero <= 10; numero++) {
+			
+			if (numero == 3) {
+				System.out.println("Numero encontrado: " + 3);
+				break;
+			}
+			
 		}
+		
+		System.out.println("Saiu do laço for depois do break após encontrar o numero 3");
 	}
 }
