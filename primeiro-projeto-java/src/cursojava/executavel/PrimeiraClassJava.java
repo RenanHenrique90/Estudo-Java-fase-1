@@ -44,7 +44,7 @@ public class PrimeiraClassJava {
 		}*/
 		//-----------------------------------------------------------------------
 		
-		/*Switch case: Operações Exatas*/
+		/*Switch case: Operações Exatas
 		
 		int dia = 7;
 		
@@ -73,9 +73,26 @@ public class PrimeiraClassJava {
 		default:
 			System.out.println("Digite um numero de 1 a 7");
 			break;
-		}
+		}*/
 		//-----------------------------------------------------------------------
 		
+		/*Estrutura de repetição While*/
 		
+		int numero1 = 0;
+		int numero2 = 0;
+		
+		while (numero1 <= 20) {
+			System.out.println(numero1);
+			numero1 ++;
+		}
+		
+		/*Estrutura de repetição Do while*/
+		System.out.println("___________________________\n");
+		
+		do {
+			System.out.println(numero2);
+			numero2 ++;
+		} while (numero2 >= 0 && numero2 <= 10);
+		    System.out.println("Hello World!");
 	}
 }
