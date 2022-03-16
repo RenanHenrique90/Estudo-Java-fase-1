@@ -4,6 +4,8 @@ import java.util.Iterator;
 
 import javax.print.attribute.standard.Media;
 
+import javax.swing.JOptionPane;
+
 public class PrimeiraClassJava {
 
 	public static void main(String[] args) {
@@ -125,7 +127,9 @@ public class PrimeiraClassJava {
 		
 		System.out.println("Saiu do laço for depois do break após encontrar o numero 3");*/
 		
-		/*FOR com CONTINUE*/
+		//-----------------------------------------------------------------------
+		
+		/*FOR com CONTINUE
 		
 		for (int numero = 0; numero <= 10; numero++) {
 			if (numero == 3) {
@@ -141,7 +145,35 @@ public class PrimeiraClassJava {
 				continue;
 			}
 			System.out.println("Esse é o segundo laço FOR");
-		}
+		}*/
+		
+		//-----------------------------------------------------------------------
+		
+		String carros = JOptionPane.showInputDialog("Informe a quantidade de carros!");
+		String pessoas = JOptionPane.showInputDialog("Informe a quantidade de pessoas!");
+		
+		double carroNumero = Double.parseDouble(carros);
+		double pessoaNumero = Double.parseDouble(pessoas);
+		
+		int divisao = (int) (carroNumero / pessoaNumero) ;
+		
+		double resto = carroNumero % pessoaNumero;
+		
+		System.out.println("o numero de carros para cada pessoa é: " + divisao + "\no numero de carros que sobrou é: " + resto);
+		
+		System.out.println("_____________________________________________\n");
+		
+		String carros1 = JOptionPane.showInputDialog("Informe a quantidade de carros!");
+		String pessoas1 = JOptionPane.showInputDialog("Informe a quantidade de pessoas!");
+		
+		double carroNumero1 = Double.parseDouble(carros1);
+		double pessoaNumero1= Double.parseDouble(pessoas1);
+		
+		int divisao1 = (int) (carroNumero1 / pessoaNumero1) ;
+		
+		double resto1 = carroNumero1 % pessoaNumero1;
+		
+		JOptionPane.showMessageDialog(null, "o numero de carros para cada pessoa é: " + divisao1 + "\no numero de carros que sobrou é: " + resto1);
 		
 	}
 }
