@@ -1,16 +1,20 @@
 package cursojava.executavel;
 
+import javax.print.attribute.standard.Media;
+
 public class PrimeiraClassJava {
 
 	public static void main(String[] args) {
-
+		
 		int nota1 = 100;
 		int nota2 = 50;
 		int nota3 = 70;
 		int nota4 = 80;
+		int mediaAluno = 0;
 		
-		int mediaAluno = (nota1 + nota2 + nota3 + nota4) / 4;
+		mediaAluno = (nota1 + nota2 + nota3 + nota4) / 4;
 		
+		/*Condições lógicas com IF e Else
 		if (mediaAluno >= 70 && mediaAluno <= 100) {
 			System.out.println("Voce foi aprovado!");
 		} else if (mediaAluno < 70 && mediaAluno >= 55) {
@@ -19,6 +23,12 @@ public class PrimeiraClassJava {
 			System.out.println("Voce foi reprovado!");
 		} else {
 			System.out.println("Nota invalida!");
-		}
+		}*/
+		
+		/*Operadores ternários*/
+		
+		String saidaResuldo = mediaAluno >= 70 ? "Aluno aprovado" : (mediaAluno < 70 && mediaAluno >= 50)  ? "Voce esta de recuperação" : "Voce esta reprovado";
+		
+		System.out.println(saidaResuldo);
 	}
 }
