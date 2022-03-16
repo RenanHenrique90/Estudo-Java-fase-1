@@ -7,7 +7,7 @@ public class PrimeiraClassJava {
 	public static void main(String[] args) {
 		
 		int nota1 = 100;
-		int nota2 = 50;
+		int nota2 = 70;
 		int nota3 = 70;
 		int nota4 = 80;
 		int mediaAluno = 0;
@@ -25,10 +25,22 @@ public class PrimeiraClassJava {
 			System.out.println("Nota invalida!");
 		}*/
 		
-		/*Operadores ternários*/
+		/*Operadores ternários
 		
 		String saidaResuldo = mediaAluno >= 70 ? "Aluno aprovado" : (mediaAluno < 70 && mediaAluno >= 50)  ? "Voce esta de recuperação" : "Voce esta reprovado";
 		
-		System.out.println(saidaResuldo);
+		System.out.println(saidaResuldo);*/
+		
+		/*Operações lógicas aninhadas: São operações dentro de operações*/
+		
+		if (mediaAluno >= 50) {
+			if (mediaAluno >=70) {
+				System.out.println("Aluno está aprovado direto!");
+			} else {
+				System.out.println("Aluno está em recuperação!");
+			}
+		}else {
+			System.out.println("Aluno está reprovado!");
+		}
 	}
 }
