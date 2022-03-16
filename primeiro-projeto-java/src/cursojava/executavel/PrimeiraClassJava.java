@@ -112,7 +112,7 @@ public class PrimeiraClassJava {
 		
 		//-----------------------------------------------------------------------
 		
-		/*For com Break*/
+		/*FOR com BREAK
 		
 		for (int numero = 0; numero <= 10; numero++) {
 			
@@ -123,6 +123,25 @@ public class PrimeiraClassJava {
 			
 		}
 		
-		System.out.println("Saiu do laço for depois do break após encontrar o numero 3");
+		System.out.println("Saiu do laço for depois do break após encontrar o numero 3");*/
+		
+		/*FOR com CONTINUE*/
+		
+		for (int numero = 0; numero <= 10; numero++) {
+			if (numero == 3) {
+				System.out.println("Encontrado o numero: " + 3);
+				continue;
+			}
+			System.out.println("Esse é o laço FOR");
+		}
+		
+		for (int numero = 0; numero < 10; numero++) {
+			if (numero == 3 || numero == 6 || numero == 9) {
+				System.out.println("O numero encontrado é: " + numero);
+				continue;
+			}
+			System.out.println("Esse é o segundo laço FOR");
+		}
+		
 	}
 }
